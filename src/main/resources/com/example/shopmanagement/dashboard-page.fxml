@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="891.0" prefWidth="1311.0" style="-fx-background-color: #D7DBDD;" stylesheets="@../../../css/dashboard.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="130.0" prefWidth="1301.0" spacing="7.0" AnchorPane.bottomAnchor="756.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="132.0" prefWidth="470.0">
+               <graphic>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="67.0" fitWidth="128.0" layoutX="7.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/wheel.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="88.0" layoutY="42.0" opacity="0.5" text="New Tires">
+                           <font>
+                              <Font name="System Bold" size="33.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="329.0" layoutY="37.0" text="500">
+                           <font>
+                              <Font size="45.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="143.0" prefWidth="405.0">
+               <graphic>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="41.0" layoutY="21.0" opacity="0.5" text="Used Tires">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="132.0" layoutY="15.0" text="500">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="67.0" fitWidth="128.0" layoutX="5.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/wheel.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="152.0" prefWidth="451.0">
+               <graphic>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="79.0" fitWidth="41.0" layoutX="-6.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/customers-ic.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="41.0" layoutY="21.0" opacity="0.5" text="Customers">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="132.0" layoutY="14.0" text="500">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="14.0" layoutY="165.0" prefHeight="325.0" prefWidth="1257.0" spacing="50.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="228.0" prefWidth="164.0">
+               <graphic>
+                  <AnchorPane prefHeight="230.0" prefWidth="236.0">
+                     <children>
+                        <BarChart layoutX="-11.0" layoutY="40.0" prefHeight="150.0" prefWidth="214.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                        <Label layoutY="6.0" text="Expense" />
+                        <Label layoutX="-1.0" layoutY="23.0" text="\$" />
+                     </children>
+                  </AnchorPane>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="228.0" prefWidth="164.0">
+               <graphic>
+                  <AnchorPane prefHeight="230.0" prefWidth="236.0">
+                     <children>
+                        <BarChart layoutX="-11.0" layoutY="40.0" prefHeight="150.0" prefWidth="214.0">
+                           <xAxis>
+                              <CategoryAxis side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                        </BarChart>
+                        <Label layoutY="6.0" text="Income" />
+                        <Label layoutX="-1.0" layoutY="23.0" text="\$" />
+                     </children>
+                  </AnchorPane>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

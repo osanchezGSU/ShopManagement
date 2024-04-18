@@ -1,4 +1,4 @@
 package com.example.shopmanagement;
 
-public class SplashScreen {
+public class DashboardController {
 }

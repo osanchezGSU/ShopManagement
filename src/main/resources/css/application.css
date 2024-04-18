@@ -1,0 +1,12 @@
+.button {
+	-fx-background-color: transparent;
+	-fx-font-size: 10pt;
+	-fx-text-fill: black
+	}
+.button:hover{
+    -fx-background-color: #ABB7B9
+}
+.button:selected{
+     -fx-background-color: blue
+}
+

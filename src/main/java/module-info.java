@@ -6,4 +6,5 @@ module com.example.shopmanagement {
 
     opens com.example.shopmanagement to javafx.fxml;
     exports com.example.shopmanagement;
+
 }
